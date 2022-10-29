@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.hero{
+    background: linear-gradient(to top,#1d2026,crimson);
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 6%;
+    /* background-color: darkgrey; */
+}
+nav img{
+    width: 25px;
+    border-radius: 25px;
+    margin-right: 5px;
+    
+}
+nav h2{
+    width: 0px;
+    cursor: pointer;
+}
+
+nav ul{
+    text-align: right;
+    flex: 1;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 14px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    opacity: 7;
+}
+nav ul li a:hover{
+    color: #1d2026;
+    transform: translate(2,2);
+}
+button{
+    background-color: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+button span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    transition: background 0.5s,margin-left 0.5s;
+
+}
+.lamp-container{
+    position: absolute;
+    /* top: -35;
+    left: 22%; */
+    width: 200px;
+}
+.image1{
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    margin-left: 80px
+}
+.image2{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 390px;
+    margin-left: -10px;
+    opacity: 0;
+    padding: 10px;
+    transition: opacity 0.5s;
+    /* max-width: 600px;
+    margin-top: 7%; */
+    /* margin-left: 50%; */
+}
+.text-container{
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+.text-container h1{
+    font-size: 80px;
+    font-weight: 400;
+
+}
+.text-container a{
+    text-decoration: none;
+    background: #00986f;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 30px;
+    border-radius: 30px;
+
+}
+.text-container a:hover{
+    transform:rotate3d(2,2);
+    background-color: crimson;
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top:150px ;
+}
+/* 
+.control line{
+    width: 250px;
+    height: 4px;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 2px;
+}
+.control line span{
+    width: 50px;
+    height: 8px;
+    margin-top: -2px;
+    border-radius: 4px;
+    background: #00986f;
+    display: block;
+} */
+.active{
+    background-color: green;
+}
+.active span{
+    background: #fff;
+    margin-left: 31px;
+}
+.on{
+    opacity: 1;
+}
