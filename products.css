@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: darkgreen;
+
+  }
+  .logo{
+    width:100%;
+    display: flex;
+  }
+  
+  .logo h1 {
+    color: white;
+    font-size: 36px;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+    width:90%;
+    padding: 10px 0 10px 20px;
+  }
+  .logo h1 span{
+    font-style: italic;
+    color: gold;
+    -webkit-text-stroke: 1px black;
+    font-family: cursive;
+  }
+ .logo .icons{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  .logo .icons img{
+    width: 20px;
+    height: 20px;
+    /* border-radius: 50%; */
+    border:1px solid #fff;
+    cursor: pointer;
+  }
+  .logo .icons span{
+    /* content:''; */
+    /* background-color: green; */
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    /* border-radius: 50%; */
+    /* border: 1px solid #fff; */
+    margin: 1px 0px 40px 0px;
+    color:darkred;
+  } 
+  .logo .image{
+    /* display: inline-block; */
+    /* width: 10%; */
+    /* padding-inline: 20px; */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /* height: 60px; */
+  }
+  
+  .logo .image img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border:2px solid #fff;
+    cursor: pointer;
+    display: inline-block;
+    /* image-resolution: ; */
+  }
+  .logo .image span{
+    content:'';
+    background-color: green;
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 15px 0px 30px 0px;
+  }
+  nav ul {
+    flex:1;
+    text-align:center;
+
+    /* float: right; */
+  }
+  
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    /* margin: 25px 0px 0px 0px; */
+    padding-bottom: 10px;
+/*     justify-content:space-between; */
+  }
+  
+  nav ul li a {
+    color: azure;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding: 20px 10px 10px;
+    margin-right: 25px;
+  }
+  
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background:azure ;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 50%;
+}
+
+
+.container{
+    padding:20px;
+    display:flex;
+    width:100%;
+    justify-content:left;
+    align-items:left;
+    flex-direction:column;
+    margin:40px auto;
+      
+      
+}
+
+.container .text{
+    color:darkgreen;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+  
+  }
+  
+.container .text h1{
+    font-size: 40px;
+    line-height: 100px;
+    align-items: center;
+    text-align: center;
+    color: green;
+    -webkit-text-stroke: 3px;
+    background: url(new1.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+  
+  }
+
+ .container .products{
+    display:flex;
+    align-items:left;
+    flex-wrap:wrap;
+    height: fit-content;
+    padding:30px;
+  }
+  .products .pro{
+    position: relative;
+    width:350px;
+    height: 450px;
+    display:flex;
+    margin:5px;
+    padding: 10px;
+    background-color:lightgray;
+  }
+  
+  .products .pro img{
+    top:0;
+    left:0;
+    width:90%;
+    height:60%;
+    object-fit:cover;
+    padding: px;
+    margin: 0px 12px;
+    cursor: pointer;
+  }
+  .products .pro img:hover{
+    opacity: 0.7;
+  }
+  .products .pro .price{
+    /* letter-spacing: 2px; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    bottom:15px;
+    left:30px;
+    display:inline-block;
+    position:absolute;
+    /* -webkit-text-stroke: 2px black; */
+    color: green;
+    /* padding-bottom: 25px; */
+  }
+
+  .products .pro .price button{
+    text-decoration:none;
+    width:150px;
+    color:#fff;
+    border-radius: 10px;
+    height: 35px;
+    outline: none;
+    background-color:green;
+    cursor: pointer;
+  }
+
+  .container .searchbar{
+    display: inline-block;
+    position: relative;
+    top: 0;
+    /* left: 12%; */
+    /* z-index: 1; */
+  }
+  
+  .container .searchbar input[type=text] {
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    position: relative;
+    border-radius: 15px;
+    font-size: 16px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    /* margin: 0px 30px; */
+  }
+  
+  .container .searchbar input[type=text]:focus {
+    inline-size: 60%;
+  }
+  .container .searchbar button{
+    width: 100px;
+    height: 60px;
+    font-size: 24px;
+    border-radius: 15px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: darkgreen;
+  }
+/* 
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+The Modal (background) */
+/* 
+.modal {
+    display: none; /* Hidden by default */
+    /* position: fixed; Stay in place */
+    /* z-index: 1; Sit on top */
+    /* padding-top: 100px; Location of the box */
+    /* left: 0; */
+    /* top: 0; */
+    /* width: 100%; Full width */
+    /* height: 100%; Full height */
+    /* overflow: auto; Enable scroll if needed */
+    /* background-color:lightgray; Fallback color */
+    /* background-color: rgba(133, 124, 124, 0.9); /* Black w/ opacity  
+}
+
+Modal Content (image) 
+.modal-content {
+    display: block;
+    position:relative;
+    left:10%;
+    width: 80%;
+    height: 60%;
+    max-width: 900px;
+}
+
+ Caption of Modal Image 
+H2{
+    display: block;
+    position:relative;
+    width: 180px;
+    left:100px;
+    top:0px;
+     max-width: 700px; 
+    text-align: center;
+    color: darkgreen;
+    height: 20px;
+    
+    
+}
+
+button{
+    text-decoration:none;
+    width:200px;
+    height:50px;
+    font-size: 20px;
+    color:#fff;
+    cursor: pointer;
+    left:100px;
+    position:absolute;
+    background-color:green;
+}
+
+button:hover{
+    box-shadow: grey;
+}
+
+ Add Animation 
+.modal-content, H2{    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+The Close Button 
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ 100% Image Width on Smaller Screens 
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+} */
+
+.next{
+  display: flex;
+  position: relative;
+  margin: 20px 30%;
+  padding-bottom: 10px;
+}
+.next p{
+  width: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font: 16px;
+  opacity: 0.7;
+}
+
+footer{
+  columns: #fff;
+  background-color: darkgray;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: fit-content;
+}
+footer table{
+  flex: 1;
+  text-align: center;
+  float: right;
+  justify-content: center;
+}
+footer  ul{
+  text-align: center;
+  /* display: flex; */
+  position: relative;
+  justify-content: space-between;
+}
+footer ul li{
+  /* display: inline-table; */
+  padding: 5px;
+  list-style: none;
+  justify-content: space-between;
+}

@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* font-size: 30px; */
     font-family: 'Times New Roman', Times, serif;
 }
 .container{
@@ -13,7 +14,6 @@
     padding: 0 8%;
     position: relative;
     background-image: linear-gradient(rgba(0,0,0,0.3),transparent), url(12.jpg);
-
 }
 
 nav{
@@ -26,20 +26,21 @@ nav{
 nav h2{
     width: 120px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     color: #fff;
 }
 
 nav ul{
     flex:1;
     text-align: right;
-    padding-right: 30px;
+    padding-right: 1px;
 }
 
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 30px;
+    margin: 10px 0px;
+    padding: 10px;
 }
 
 nav ul li a{
@@ -60,20 +61,25 @@ nav ul li a::after{
 }
 nav ul li a:hover::after{
     width: 50%;
-
 }
+
 .textbox{
     color: #fff;
     position: absolute;
     bottom: 8%;
 }
+
 .textbox p{
     font-size: 50px;
     font-weight: 600;
 }
+/* .textbox span{
+    padding: 25px;
+} */
+
 .textbox h1{
-    font-size: 120px;
-    line-height: 160px;
+    font-size: 70px;
+    line-height: 100px;
     margin-left: -10px;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
@@ -93,9 +99,18 @@ nav ul li a:hover::after{
 
 
 .textbox h3{
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 600;
+    opacity: 0;
+    animation: backward 2s linear infinite;
 }
+
+@keyframes backward{
+    100%{
+        opacity: 8;
+    }
+}
+
 .textbox .row{
     display: flex;
     align-items: center;
@@ -105,30 +120,47 @@ nav ul li a:hover::after{
 .textbox a{
     text-decoration: none;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 2px;
     margin-right: 20px;
     border: 2px solid #fff;
     display: flex;
     align-items: center;
-    transition: backgroun-color 0.3;
+    transition: 0.3;
+    border-radius: 20px;
 }
 
 .textbox a:hover{
     background-color: orangered;
+    border:none;
+    shadow:4px 4px orangered;
 }
 .textbox a span{
     font-size: 30px;
     line-height: 15px;
     margin-left: 5px;
 }
-.socialicons{
-    position: absolute;
-    right: 5%;
-    bottom: 8%;
-}
-.socialicons img{
-    width: 25px;
-    display: block;
-    margin: 25px 5px;
-}
 
+.socialicons{
+    position: fixed;
+    right: 5%;
+    top: 25%;
+    /* justify-content: space-between; */
+    padding: 0px;
+    right:0px;
+    width:50px;
+    /* height:150px; */
+    background-color:lightgray;
+}
+.socialicons a{
+    width: 100%;
+    /* display: block; */
+    margin: 2px 5px;
+    position: relative;
+    display: inline-block;
+    
+}
+.socialicons a img{
+    width:80%;
+    padding-top:0px 3px;
+    border-radius: 20px;
+}

@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* font-size: 30px; */
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    width: 100%;
+    height: fit-content;
+    background-size: cover;
+    background-position: center;
+    padding: 0px 4%;
+    position: relative;
+    background: linear-gradient(to bottom,cadetblue, rgb(24, 42, 43));
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+nav h2{
+    width: 120px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+nav ul{
+    flex:1;
+    text-align: right;
+    padding-right: 1px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background:#fff ;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 50%;
+}
+
+.container img{
+    width: 100%;
+    padding: 0px;
+
+}
+.container h2{
+    color: #fff;
+    font-size: large;
+    
+}
+
+.container .mid-content{
+    display: flex;
+    width: 100%; 
+}
+.container .all{
+    width: 250px;
+    padding: 25px;
+    height: fit-content;
+    background-color: antiquewhite;
+    margin: 20px;
+
+}
+.container .all h2{
+    color: brown;
+}
+
+.container .all img{
+    padding: 0px;
+}
+
+
+footer{
+    columns: #fff;
+    background-color: darkgray;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+footer table{
+    flex: 1;
+    text-align: center;
+    float: right;
+    justify-content: center;
+}
+footer  ul{
+    text-align: center;
+    /* display: flex; */
+    position: relative;
+    justify-content: space-between;
+}
+footer ul li{
+    /* display: inline-table; */
+    padding: 5px;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.socialicons{
+    position: fixed;
+    right: 5%;
+    top: 25%;
+    /* justify-content: space-between; */
+    padding: 0px;
+    right:0px;
+    width:50px;
+    /* height:150px; */
+    background-color:lightgray;
+}
+.socialicons a{
+    width: 100%;
+    display: inline-block;
+    margin: 2px 5px;
+    position: relative;
+    
+}
+.socialicons a img{
+    width:80%;
+    padding-top:0px 3px;
+    border-radius: 20px;
+}
+.description{
+    width: 60%;
+    padding: 25px;
+}
+.description img{
+    width: 90%;
+    border: 2px solid #fff;
+    margin: 25px;
+}
+
+.description a{
+    border-radius: 20px;
+    background-color: crimson;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sendmail{
+    display: inline-block;
+    padding: 20px;
+    
+}
+.sendmail h4{
+    display: flex;
+    padding: 10px;
+}
+
+.sendmail textarea {
+    width: 350px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    inline-size: fit content;
+    border-radius: 5px;
+    font-size: 25px;
+}
+.sendmail textarea:hover{
+    height: 260px;
+}
+.sendmail input {
+    width: auto;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    inline-size: auto;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.active{
+    background-color: green;
+}
+.active span{
+    background: #fff;
+    margin-left: 31px;
+}
+
+button{
+    background-color: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+button span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    transition: background 0.5s,margin-left 0.5s;
+
+}
+
+.on{
+    background: linear-gradient(to bottom,indigo,rgb(29, 6, 46));
+
+}
+.sendmail button{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    justify-content: space-between;
+    display: flex;
+    width: 140px;
+    padding: 15px;
+    align-items: center;
+    font-size: large;
+}
+.sendmail button:hover{
+    background-color: green;
+}
+/* .about::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background:#fff ;
+    transition: width 0.3s;
+} */
