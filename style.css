@@ -6,7 +6,6 @@
   
   header {
     background: darkgreen;
-
   }
   .logo{
     width:100%;
@@ -40,11 +39,12 @@
     /* border:1px solid #fff; */
     cursor: pointer;
   }
+
   .logo .icons span{
     /* content:''; */
     /* background-color: green; */
     position: relative;
-    display: inline-block;
+    display: none;
     width: 10px;
     height: 10px;
     /* border-radius: 50%; */
@@ -82,7 +82,7 @@
     right: 20px;
     border-radius: 50%;
     border: 1px solid #fff;
-    margin: 0px 0px 50px
+    margin: 0px 0px 50px;
   }
   nav ul {
     flex:1;
@@ -130,13 +130,13 @@ nav ul li a:hover::after{
   width:100%;
   height:80%;
 }
-/* 
+
 aside{
     background-color: rgb(82, 82, 85);
     margin: 0px 0px 0px 0px;
     padding-inline: 20px;
     right: 0px;
-    display: inline-block;
+    display: none;
     position: absolute;
     height: fit-content;
   
@@ -201,7 +201,7 @@ aside ul li a{
   text-decoration: double;
   color:#fff 
 
-} */
+}
 .slide img{
   width:100%;
   height:50em;
@@ -239,11 +239,11 @@ aside ul li a{
 
 }
 
-@keyframes back{
+/* @keyframes back{
   100%{
       background-position: 2000px 0;
   }
-}
+} */
 
 .sendmail{
   display: inline-block;
@@ -328,8 +328,8 @@ button span{
 
 .container{
   padding:20px;
-  display:flex;
-  width:100%;
+  /* display:flex; */
+  /* width:100%; */
   justify-content:left;
   align-items:left;
   flex-direction:column;
@@ -380,6 +380,9 @@ button span{
   width:150px;
   color:#fff;
   background-color:green;
+}
+.container .products .pro .price p{
+  color: goldenrod;
 }
 
 .searchbar{
@@ -533,4 +536,87 @@ footer ul li{
   padding: 5px;
   list-style: none;
   justify-content: space-between;
+}
+
+@media(max-width:980px){
+  nav ul li a {
+    color: azure;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding: 20px 0px;
+    margin-right: 25px;
+  }
+  .slide img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+  }
+  .logo .image img {
+    width: 40px;
+    height: 40px;
+  }
+  .products {
+    display: flex;
+    /* grid-template-columns: repeat(2,3fr); */
+    padding:30px 0;
+  }
+  .products .pro {
+    position: relative;
+    width: 180px;
+    height: 150px;
+    /* display: flex; */
+    margin: 5px;
+    padding: 3px;
+    background-color: lightgray;
+  }
+  .products .pro h1{
+    font-size: 25px;
+  }
+  .products .pro img {
+    top: 0;
+    left: 0;
+    width: 90%;
+    /* height: 60%; */
+    aspect-ratio: 4/3;
+    /* object-fit: cover; */
+    padding: 10px;
+
+  }
+  .products .pro .price {
+    font-size: 14px;
+    bottom: 5px;
+    left: 0px;
+    position: relative;
+
+  }
+  .slide .textbox h2 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .container {
+    padding: 5px;
+    /* display: flex; */
+    /* width: 100%; */
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    /* margin: 40px auto; */
+  }
+  .products .pro {
+    position: relative;
+    width: min-content;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    background-color: lightgray;
+}
+
+
+
 }
